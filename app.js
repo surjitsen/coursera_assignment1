@@ -5,7 +5,7 @@ angular.module('Module1Coding', [])
 
 .controller('Module1CodingController', function ($scope) {
   $scope.name = "";
-  $scope.message = "Please enter data first";
+  $scope.message = "";
 
   $scope.displayHowMuch = function () {
     var totalItems = calculateNumberOfItems($scope.name);
@@ -26,7 +26,7 @@ angular.module('Module1Coding', [])
     if (str === '')
       return 0;
     else {
-      return str.split(" ").length;
+      return str.split(",").length;
     }
   }
 
